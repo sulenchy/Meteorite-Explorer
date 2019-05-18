@@ -1,6 +1,23 @@
 $bg-color:#ffffff;
+$table-color: #000000;
 
 
 body {
     background-color: $bg-color;
+}
+
+.main-container {
+    width: 90%;
+    margin: auto;
+}
+.table-container {
+    overflow-x:auto;
+}
+
+.table-head {
+    font-weight: bolder;
+}
+
+.table-cell {
+    width: 10em;
 }

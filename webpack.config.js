@@ -1,4 +1,6 @@
 const path = require('path');
+
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -39,7 +41,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./index.html"
         }),
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style.css'),
+        new webpack.EnvironmentPlugin({
+            URL: 'https://data.nasa.gov/resource/gh4g-9sfh.json',
+          })
     ],
     devtool: 'source-map',
     resolve: {
