@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
+import { App } from './components/app';
+import './styles/style.scss';
 
 const ROOT = document.querySelector(".container");
-ReactDOM.render(<h1>Welcome  to meteorite explorer</h1>, ROOT);
+ReactDOM.render(<App name='fghgh'/>, ROOT);
